@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.kontejner-dio {
+    height: 100%;
+    width: 100%;
+    background-color: steelblue;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vjezbe-lista {
+    margin: 10px;
+}
+
+.vjezbe-stavka {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.vjezbe-stavka:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.vjezbe-stavka:not(:first-child) {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.zadaci-lista {
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    grid-template-columns: repeat( auto-fill, minmax(100px, 1fr) );
+    background-color: cornflowerblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.zadaci-stavka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding-block: 3px;
+}
